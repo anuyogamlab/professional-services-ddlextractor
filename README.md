@@ -375,6 +375,8 @@ Platform usage.
 *   [Hive to BigQuery](tools/hive-bigquery/) - A Python framework to migrate
     Hive table to BigQuery using Cloud SQL to keep track of the migration
     progress.
+*   [Hive DDL Extractor](tools/hive-ddl-extractor/) - A Spark application to
+    extract Hive database DDLs to accelerate migration to BigQuery.
 *   [IAM Permissions Copier](tools/iam-permissions-copier) - This tool allows
     you to copy supported GCP IAM permissions from unmanaged users to managed
     Cloud Identity users.
