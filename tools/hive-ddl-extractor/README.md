@@ -20,7 +20,7 @@ DDLs will be extracted to a GCS bucket and the metadata will be in a BigQuery ta
 
 ```
 
-$ python main.py <host_ip> <project> <hive_database> <gcs_working_directory> <bigquery_dataset> 
+$ python hive_ddl_extractor.py <host_ip> <project> <hive_database> <gcs_working_directory> <bigquery_dataset> 
 
 ```
 
@@ -31,7 +31,7 @@ This template requires the [Spark BigQuery connector](https://cloud.google.com/d
 ## Example submission
 
 ```
-python main.py <host_ip> <project> <database> <bucket-name> <dataset> 
+python hive_ddl_extractor.py <host_ip> <project> <database> <bucket-name> <dataset> 
 
 ```
 
