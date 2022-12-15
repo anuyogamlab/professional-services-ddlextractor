@@ -91,7 +91,7 @@ if __name__ == "__main__":
             """
             # default.emp_part
             print("Extracting DDL for the Hive Table: "+hive_database+"."+t.name)
-            show_create = spark.sql("SHOW CREATE TABLE {}.{}".format(hive_database, t.name))
+            show_create = spark.sql("SHOW CREATE TABLE {}.{}".format(hive_database, t.name) AS SERDE)
             ddl_table = spark.sql(
                 "DESCRIBE FORMATTED {}.{}".format(hive_database, t.name))
             show_extended=spark.sql("show table extended from `"+hive_database+"` like '"+t.name+"'")
